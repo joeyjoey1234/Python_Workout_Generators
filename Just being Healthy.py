@@ -8,7 +8,7 @@ ab_exer = [
    "Decline sit ups:",
    'Sit-up:',
    "Crunch:",
-   "Bench-Press Sit-Up:",
+    "Bench-Press Sit-Up:",
     "Windmill:",
     "Resistance Band Frankenstein Twist:"
 ]
@@ -35,7 +35,11 @@ random_bodybuilding = [
     "Leg Extentions",
     "Leg Curls",
     "dumbbell rows",
-    "Barbell Rows"
+    "Barbell Rows",
+    "Back Extentions",
+    "RDL",
+    "Tricep Extention",
+    "Skull crushers"
 
 ]
 
@@ -81,7 +85,7 @@ workout1 = {
     ab_exer[random.randrange(0, 11, 1)]: 'Sets&Reps:{}'.format(ab_exer_sets_reps[week]),
     carryover[random.randrange(0, 8, 1)]: 'Percentage:{}%, Sets&Reps:{}'.format(this_weeks_acc_percentage,
                                                                                 acc_lift_Sets_reps[week]),
-    random_bodybuilding[random.randrange(0, 12, 1)]: 'Percentage:{}%, Sets&Reps:{}'.format(this_weeks_acc_percentage,
+    random_bodybuilding[random.randrange(0, 16, 1)]: 'Percentage:{}%, Sets&Reps:{}'.format(this_weeks_acc_percentage,
                                                                                           acc_lift_Sets_reps[week]),
     " ":""
 
@@ -96,7 +100,7 @@ workout2 = {
     ab_exer[random.randrange(0, 11, 1)]: 'Sets&Reps:{}'.format(ab_exer_sets_reps[week]),
     carryover[random.randrange(0, 8, 1)]: 'Percentage:{}%, Sets&Reps:{}'.format(this_weeks_acc_percentage,
                                                                                 acc_lift_Sets_reps[week]),
-    random_bodybuilding[random.randrange(0, 12, 1)]: 'Percentage:{}%, Sets&Reps:{}'.format(this_weeks_acc_percentage,
+    random_bodybuilding[random.randrange(0, 16, 1)]: 'Percentage:{}%, Sets&Reps:{}'.format(this_weeks_acc_percentage,
                                                                                           acc_lift_Sets_reps[week]),
     " ":""
 }
@@ -111,7 +115,7 @@ workout3 = {
     ab_exer[random.randrange(0, 11, 1)]: 'Sets&Reps:{}'.format(ab_exer_sets_reps[week]),
     carryover[random.randrange(0, 8, 1)]: 'Percentage:{}%, Sets&Reps:{}'.format(this_weeks_acc_percentage,
                                                                                 acc_lift_Sets_reps[week]),
-    random_bodybuilding[random.randrange(0, 12, 1)]: 'Percentage:{}%, Sets&Reps:{}'.format(this_weeks_acc_percentage,
+    random_bodybuilding[random.randrange(0, 16, 1)]: 'Percentage:{}%, Sets&Reps:{}'.format(this_weeks_acc_percentage,
                                                                                           acc_lift_Sets_reps[week]),
     " ":""
 }
