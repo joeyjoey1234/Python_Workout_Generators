@@ -128,8 +128,7 @@ for x in This_weeks_workout:
     for y in x:
         print(y,x[y])
         #print(y)
-
-
+print("Anything extra done is up to user")
 
 
 
