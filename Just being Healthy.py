@@ -81,56 +81,52 @@ workout1 = {
     "":"",
     'Bench Press:' : 'Percentage:{}%, Wieght:{}Lb,sets & reps:{}'.format(this_weeks_main_percentage,(bench_max * this_weeks_main_percentage),Main_lift_Sets_reps[this_weeks_main_percentage]),
     ## Percentage based off week, Weight based off percentage, sets & reps based off Percentage
-    Cardio[random.randrange(0,6,1)] : "Effort {}".format(effort[random.randrange(0,2,1)]),
     ab_exer[random.randrange(0, 11, 1)]: 'Sets&Reps:{}'.format(ab_exer_sets_reps[week]),
     carryover[random.randrange(0, 8, 1)]: 'Percentage:{}%, Sets&Reps:{}'.format(this_weeks_acc_percentage,
                                                                                 acc_lift_Sets_reps[week]),
+    'Squat:': 'Percentage:{}%, Wieght:{}Lb,sets & reps:{}'.format(this_weeks_main_percentage,
+                                                                  (Squat_max * this_weeks_main_percentage),
+                                                                  Main_lift_Sets_reps[this_weeks_main_percentage]),
     random_bodybuilding[random.randrange(0, 16, 1)]: 'Percentage:{}%, Sets&Reps:{}'.format(this_weeks_acc_percentage,
                                                                                           acc_lift_Sets_reps[week]),
+    Cardio[random.randrange(0,6,1)] : "Effort {}".format(effort[random.randrange(0,3,1)]),
     " ":""
 
 }
 workout2 = {
     ## Percentage based off week, Weight based off percentage, sets & reps based off Percentage
-    'Squat:' : 'Percentage:{}%, Wieght:{}Lb,sets & reps:{}'.format(this_weeks_main_percentage,(Squat_max * this_weeks_main_percentage),Main_lift_Sets_reps[this_weeks_main_percentage]),
-    ## Percentage based off week, Weight based off percentage, sets & reps based off Percentage
-    ## Percentage based off week, Weight based off percentage, sets & reps based off Percentage
-    ## ab exercises are more about sets and reps
-    Cardio[random.randrange(0,6,1)] : "Effort {}".format(effort[random.randrange(0,2,1)]),
+    'Bench Press:' : 'Percentage:{}%, Wieght:{}Lb,sets & reps:{}'.format(this_weeks_main_percentage,(bench_max * this_weeks_main_percentage),Main_lift_Sets_reps[this_weeks_main_percentage]),
     ab_exer[random.randrange(0, 11, 1)]: 'Sets&Reps:{}'.format(ab_exer_sets_reps[week]),
     carryover[random.randrange(0, 8, 1)]: 'Percentage:{}%, Sets&Reps:{}'.format(this_weeks_acc_percentage,
                                                                                 acc_lift_Sets_reps[week]),
+    'Squat:': 'Percentage:{}%, Wieght:{}Lb,sets & reps:{}'.format(this_weeks_main_percentage,
+                                                                  (Squat_max * this_weeks_main_percentage),
+                                                                  Main_lift_Sets_reps[this_weeks_main_percentage]),
     random_bodybuilding[random.randrange(0, 16, 1)]: 'Percentage:{}%, Sets&Reps:{}'.format(this_weeks_acc_percentage,
                                                                                           acc_lift_Sets_reps[week]),
+    Cardio[random.randrange(0,6,1)] : "Effort {}".format(effort[random.randrange(0,2,1)]),
     " ":""
 }
 workout3 = {
     ## Percentage based off week, Weight based off percentage, sets & reps based off Percentage
     'Deadlift:' : 'Percentage:{}%, Wieght:{}Lb,sets & reps:{}'.format(this_weeks_main_percentage,(Deadlift_max * this_weeks_main_percentage),Main_lift_Sets_reps[this_weeks_main_percentage]),
-    ## Percentage based off week, Weight based off percentage, sets & reps based off Percentage
-
-    ## Percentage based off week, Weight based off percentage, sets & reps based off Percentage
-    ## ab exercises are more about sets and reps
-    Cardio[random.randrange(0,6,1)] : "Effort {}".format(effort[random.randrange(0,2,1)]),
     ab_exer[random.randrange(0, 11, 1)]: 'Sets&Reps:{}'.format(ab_exer_sets_reps[week]),
     carryover[random.randrange(0, 8, 1)]: 'Percentage:{}%, Sets&Reps:{}'.format(this_weeks_acc_percentage,
                                                                                 acc_lift_Sets_reps[week]),
     random_bodybuilding[random.randrange(0, 16, 1)]: 'Percentage:{}%, Sets&Reps:{}'.format(this_weeks_acc_percentage,
                                                                                           acc_lift_Sets_reps[week]),
+    random_bodybuilding[random.randrange(0, 16, 1)]: 'Percentage:{}%, Sets&Reps:{}'.format(this_weeks_acc_percentage,
+                                                                                          acc_lift_Sets_reps[week]),
+    Cardio[random.randrange(0,6,1)] : "Effort {}".format(effort[random.randrange(0,2,1)]),
     " ":""
 }
 
 workout_pick = [workout1,workout2,workout3]
 
-This_weeks_workout = [workout_pick[0],workout_pick[1],workout_pick[2]]
+This_weeks_workout = [workout_pick[0],workout_pick[2],workout_pick[1]]
 
 for x in This_weeks_workout:
     for y in x:
         print(y,x[y])
         #print(y)
 print("Anything extra done is up to user")
-
-
-
-
-
